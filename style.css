@@ -151,6 +151,13 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 480px) {
+    .btn {
+        font-size: 16px; /* Reduz o tamanho da fonte para telas pequenas */
+        padding: 10px 15px;
+    }
+}
+
 .instagram {
     background: #E4405F;
 }

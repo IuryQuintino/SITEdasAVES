@@ -7,6 +7,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-size: 16px; /* Tamanho base */
 }
 .gallery {
     display: flex;
@@ -75,6 +76,37 @@ body {
 @media (max-width: 480px) {
     .gallery img {
         max-width: 120px;
+    }
+}
+/* Ajuste para tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Ajuste para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
     }
 }
 

@@ -56,3 +56,18 @@ body {
 .lightbox.active {
     display: flex;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery {
+        gap: 5px;
+    }
+    .gallery img {
+        max-width: 150px;
+    }
+}
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 120px;
+    }
+}

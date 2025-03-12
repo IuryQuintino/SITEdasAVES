@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AVES</title>
+</head>
+<body>
+    <h1  class="titulo">REPOSITÓRIO DO PROJETO DAS AVES</h1>
+    <h2 class="CEET">CEET GIUSEPPE ALTOÉ</h2>
+
+    <h1 class="tituloaves">Galeria de Aves</h1>
+
+    <div class="gallery">
+        <img src="aves/Alma de gato.jpg" alt="Alma de gato" onclick="openLightbox(this)">
+        <img src="aves/Anu branco.jpg" alt="Anu branco" onclick="openLightbox(this)">
+        <img src="aves/Anu preto.jpg" alt="Anu preto" onclick="openLightbox(this)">
+        <img src="aves/Araçari de bico branco.jpg" alt="Araçari de bico branco" onclick="openLightbox(this)">
+        <img src="aves/Arapaçu de Bico Torto.jpg" alt="Arapaçu de Bico Torto" onclick="openLightbox(this)">
+        <img src="aves/Bem-te-vi.jpg" alt="Bem-te-vi" onclick="openLightbox(this)">
+        <img src="aves/Caga-sebo - Cambacica.jpg" alt="Caga-sebo - Cambacica" onclick="openLightbox(this)">
+        <img src="aves/Canário da terra.jpg" alt="Canário da terra" onclick="openLightbox(this)">
+        <img src="aves/Catatau.jpg" alt="Catatau" onclick="openLightbox(this)">
+        <img src="aves/Coleirinho.jpg" alt="Coleirinho" onclick="openLightbox(this)">
+        <img src="aves/Coruja caburé - Coruja-buraqueira.jpg" alt="Coruja caburé - Coruja-buraqueira" onclick="openLightbox(this)">
+        <img src="aves/Coruja Murucututu.jpg" alt="Coruja Murucututu" onclick="openLightbox(this)">
+        <img src="aves/Gaturamo-verdadeiro.jpg" alt="Gaturamo-verdadeiro" onclick="openLightbox(this)">
+        <img src="aves/Guaxe.jpg" alt="Guaxe" onclick="openLightbox(this)">
+        <img src="aves/Juriti-pupu.jpg" alt="Juriti-pupu" onclick="openLightbox(this)">
+        <img src="aves/Maitaca-verde.jpg" alt="Maitaca-verde" onclick="openLightbox(this)">
+        <img src="aves/Pica-pau-de-topete-vermelho.jpg" alt="Pica-pau-de-topete-vermelho" onclick="openLightbox(this)">
+        <img src="aves/Rolinha-roxa.jpg" alt="Rolinha-roxa" onclick="openLightbox(this)">
+        <img src="aves/Saíra de cabeça azul.jpg" alt="Saíra de cabeça azul" onclick="openLightbox(this)">
+        <img src="aves/Saíra sete cores.jpg" alt="Saíra sete cores" onclick="openLightbox(this)">
+        <img src="aves/Sanhaço cinzento.jpg" alt="Sanhacu cinzento" onclick="openLightbox(this)">
+        <img src="aves/Sanhaço de encontro amarelo.jpg" alt="Sanhacu de encontro amarelo" onclick="openLightbox(this)">
+        <img src="aves/Sanhaço do coqueiro.jpg" alt="Sanhacu do coqueiro" onclick="openLightbox(this)">
+        <img src="aves/Saracura três potes.jpg" alt="Saracura três potes" onclick="openLightbox(this)">
+        <img src="aves/Tangará Dançador.jpg" alt="Tangará Dançador" onclick="openLightbox(this)">
+        <img src="aves/Tico-tico.jpg" alt="Tico-tico" onclick="openLightbox(this)">
+        <img src="aves/Tiê preto.jpg" alt="Titê preto" onclick="openLightbox(this)">
+        <img src="aves/Tiriba.jpg" alt="Triba" onclick="openLightbox(this)">
+        <img src="aves/Tiziu.jpg" alt="Tiziu" onclick="openLightbox(this)">
+        <img src="aves/Tucano bico preto.jpg" alt="Tucano bico preto" onclick="openLightbox(this)">
+        <img src="aves/Tucano bico verde.jpg" alt="Tucano bico verde" onclick="openLightbox(this)">
+        <img src="aves/Tuim.jpg" alt="Tuim" onclick="openLightbox(this)">
+        <img src="aves/Síra Apunhalada.jpg" alt="Saíra Apunhalada" onclick="openLightbox(this)">
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+
+<audio id="audio" src=""></audio>
+    
+<script>
+    function openLightbox(img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').classList.add('active');
+        
+        var audio = document.getElementById('audio');
+        var soundSrc = 'sons/' + img.alt + '.mp3';
+        audio.src = soundSrc;
+        audio.play();
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
+        
+        var audio = document.getElementById('audio');
+        audio.pause();
+        audio.currentTime = 0;
+    }
+</script>
+
+</body>
+</html>

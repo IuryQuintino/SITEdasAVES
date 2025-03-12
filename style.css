@@ -122,3 +122,51 @@ footer {
 .main-content {
     flex: 1; /* Faz com que o conteúdo principal ocupe o espaço necessário e empurre o footer para baixo */
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.instagram {
+    background: #E4405F;
+}
+
+.instagram:hover {
+    background: #d12a4c;
+}
+
+.github {
+    background: #333;
+}
+
+.github:hover {
+    background: #222;
+}
+
+.btn i {
+    font-size: 24px;
+}

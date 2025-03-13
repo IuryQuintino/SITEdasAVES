@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #0d9c19;
+    background-color: #006235;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 .tituloaves {
-    color: #FFD700; /* Dourado vibrante */
+    color: #FFB400; /* Dourado vibrante */
     font-weight: bold;
     font-size: 28px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
@@ -37,9 +37,10 @@ body {
 }
 
 .CEET {
-    color: #1e2dff; /* Azul vibrante */
+    color: #FFD700; /* Azul vibrante */
     font-weight: bold;
     font-size: 28px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -54,9 +55,10 @@ body {
     letter-spacing: 3px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     padding: 20px;
+    margin: 0 auto; /* Centraliza a página */
     
     /* Fundo quase transparente */
-    background: rgba(0, 0, 0, 0.3); /* Preto com 30% de opacidade */
+    background: rgba(0, 0, 0, 0.2); /* Preto com 30% de opacidade */
     border-radius: 10px; /* Cantos arredondados */
     display: inline-block; /* Ajusta o tamanho ao conteúdo */
     padding: 15px 30px; /* Espaçamento interno */

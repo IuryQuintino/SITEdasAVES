@@ -198,3 +198,7 @@ footer {
 .btn i {
     font-size: 24px;
 }
+
+* {
+    box-sizing: border-box;
+}

@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 16px; /* Tamanho base */
+    
 }
 .gallery {
     display: flex;
@@ -86,48 +87,184 @@ body {
 
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .gallery {
-        gap: 5px;
+@media (min-width: 1025px) {
+    .titulo {
+        font-size: 55px;
+    }
+
+    .CEET {
+        font-size: 40px;
+    }
+
+    .tituloaves {
+        font-size: 30px;
     }
     .gallery img {
-        max-width: 150px;
+        width: 210px;
+    }
+
+    .btn {
+        font-size: 25px;
+        width: 250px;
+    }
+
+    .btn i {
+        font-size: 39px;
     }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 1024px) {
+    .titulo {
+        font-size: 36px;
+    }
+
+    .CEET {
+        font-size: 32px;
+    }
+
+    .tituloaves {
+        font-size: 29px;
+    }
+
     .gallery img {
-        max-width: 120px;
+        width: 180px;
+    }
+
+    .btn {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .btn i {
+        font-size: 34px;
     }
 }
-/* Ajuste para tablets */
+
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
-    h1 {
-        font-size: 1.8em;
+
+    .titulo {
+        font-size: 28px;
     }
-    h2 {
-        font-size: 1.5em;
+
+    .CEET {
+        font-size: 32px;
     }
-    p {
-        font-size: 1.1em;
+
+    .tituloaves {
+        font-size: 29px;
+    }
+
+    .gallery {
+        gap: 5px;
+    }
+
+    .gallery img {
+        width: 150px;
+    }
+
+    .btn {
+        font-size: 18px;
+        width: 180px;
+    }
+
+    .btn i {
+        font-size: 30px;
     }
 }
 
-/* Ajuste para celulares */
 @media (max-width: 480px) {
     body {
         font-size: 12px;
     }
-    h1 {
-        font-size: 1.5em;
+
+    .titulo {
+        font-size: 37px;
     }
-    h2 {
-        font-size: 1.3em;
+
+    .CEET {
+        font-size: 32px;
     }
-    p {
-        font-size: 1em;
+
+    .tituloaves {
+        font-size: 29px;
+    }
+
+    .gallery img {
+        width: 110px;
+    }
+
+    .btn {
+        font-size:18px;
+        width: 150px;
+    }
+
+    .btn i {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+
+    .titulo {
+        font-size: 31px;
+    }
+
+    .CEET {
+        font-size: 25px;
+    }
+
+    .tituloaves {
+        font-size: 23px;
+    }
+
+    .gallery img {
+        width: 105px;
+    }
+
+    .btn {
+        font-size:12px;
+        width: 100px;
+    }
+
+    .btn i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    .titulo {
+        font-size: 23px;
+    }
+
+    .CEET {
+        font-size: 18px;
+    }
+
+    .tituloaves {
+        font-size: 16px;
+    }
+
+    .gallery img {
+        width: 80px;
+    }
+
+    .btn {
+        font-size:12px;
+        width: 100px;
+    }
+
+    .btn i {
+        font-size: 17px;
     }
 }
 
@@ -162,22 +299,14 @@ footer {
     justify-content: center;
     gap: 10px;
     padding: 12px 20px;
-    font-size: 18px;
     text-decoration: none;
     border-radius: 8px;
     color: white;
     font-weight: bold;
     transition: 0.3s;
-    width: 200px;
     text-align: center;
 }
 
-@media (max-width: 480px) {
-    .btn {
-        font-size: 16px; /* Reduz o tamanho da fonte para telas pequenas */
-        padding: 10px 15px;
-    }
-}
 
 .instagram {
     background: #E4405F;
@@ -195,9 +324,6 @@ footer {
     background: #222;
 }
 
-.btn i {
-    font-size: 24px;
-}
 
 * {
     box-sizing: border-box;

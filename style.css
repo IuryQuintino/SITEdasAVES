@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Raleway:wght@700&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #006235;
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     font-size: 16px; /* Tamanho base */
+    background-image: url('/imagens/floresta4.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área do fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto a página é rolada */
     
 }
 .gallery {
@@ -23,47 +30,65 @@ body {
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 .gallery img:hover {
     transform: scale(1.1);
 }
 
 .tituloaves {
-    color: #FFB400; /* Dourado vibrante */
+    color: #FF8C00; /* Dourado vibrante */
     font-weight: bold;
     font-size: 28px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
     letter-spacing: 1.5px;
+
+    animation: fadeIn 1s ease-in-out;
 }
 
 .CEET {
     color: #FFD700; /* Azul vibrante */
     font-weight: bold;
     font-size: 28px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    margin: 0px 0;
+
+    animation: fadeIn 1s ease-in-out;
+    
 }
 
 .titulo {
     color: #ffffff; /* Branco puro */
     font-size: 46px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     padding: 20px;
     margin: 0 auto; /* Centraliza a página */
-    
-    /* Fundo quase transparente */
-    background: rgba(0, 0, 0, 0.2); /* Preto com 30% de opacidade */
-    border-radius: 10px; /* Cantos arredondados */
-    display: inline-block; /* Ajusta o tamanho ao conteúdo */
-    padding: 15px 30px; /* Espaçamento interno */
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+
+    background: rgba(0, 0, 0, 0.4); /*fundo do titulo*/
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    backdrop-filter: blur(0.8px);
+
+    animation: fadeIn 1s ease-in-out;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Lightbox */
 .lightbox {
     position: fixed;

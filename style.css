@@ -10,11 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 16px; /* Tamanho base */
-    background-image: url('/imagens/floresta4.jpg');
-    background-size: cover; /* Faz a imagem cobrir toda a área do fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto a página é rolada */
+    background-color: darkgreen;
     
 }
 .gallery {
